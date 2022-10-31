@@ -1,5 +1,9 @@
 :root {
-  --background-color: black
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+  --light-green: rgb(100, 150, 150);
+  --strong-dark: rgb(30, 30, 30);
+  --light-dark: rgb(40, 40, 40);
 }
 
 /* GLOBAL */
@@ -10,25 +14,27 @@
 }
 
 .btn {
-  font-size: 1.5em;
+  align-self: center;
+  font-size: 30px;
   padding: 0.2em 1em;
-  border: 1px solid black;
   border-radius: 5px;
+  color: var(--light-green);
+  background-color: var(--strong-dark);
+  border: 1px solid var(--light-green);
 }
 
 .btn:hover {
-  background-color: #555;
-  border: none;
-  border: 1px solid #555;
-  color: white;
+  color: var(--strong-dark);
+  background-color: var(--light-green);
+  border: 1px solid var(--light-green);
   cursor: pointer;
 }
 
 /* introduction start */
 .introduction {
-  height: 90vh;
-  background-color: rgb(38, 38, 38);
-  color: #fff;
+  height: 98vh;
+  background-color: var(--light-dark);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,9 +44,11 @@
 
 .introduction_header {
   justify-self: center;
-  background-color: rgb(28, 27, 27);
+  background-color: var(--strong-dark);
   text-align: center;
   padding: 3em 4em;
+  border-radius: 20px;
+  border: 1px solid var(--light-green);
 }
 
 .introduction_header h1 {
@@ -59,7 +67,7 @@
 }
 
 #intro_name {
-  color: rgb(100, 155, 150);
+  color: var(--light-green);
   font-weight: 300;
 }
 
@@ -79,14 +87,15 @@
   align-items: center;
   margin: 1em 0;
   padding: 8em 2em;
-  background-color: rgb(38, 38, 38);
+  background-color: var(--light-dark);
 
 }
 
 .contact_wrap {
-  background-color: rgb(28, 27, 27);
-  color: white;
-  border-radius: 10px;
+  background-color: var(--strong-dark);
+  color: var(--white);
+  border-radius: 20px;
+  border: 1px solid var(--light-green);
   padding: 3em 1em;
 }
 
@@ -113,8 +122,8 @@
 .contact_form input {
   font-size: 1.5em;
   margin-left: 0.5em;
-  color: #000;
-  border: 1px solid black;
+  color: var(--black);
+  border: 1px solid var(--black);
   border-radius: 5px;
 }
 
@@ -125,21 +134,22 @@
 
 .contact_button {
   width: fit-content;
-  align-self: center;
-  font-size: 30px;
   margin-top: 1em;
-  color: rgb(100, 155, 150);
-  background-color: rgb(28, 27, 27);
-  border: 1px solid rgb(100, 155, 150);
-}
-
-.contact_button:hover {
-  background-color: rgb(100, 155, 150);
-  color: rgb(28, 27, 27)
 }
 
 /* contact end */
 
+
+/* footer start */
 .footer {
-  background-color: #848;
+  background-color: var(--light-dark);
+  color: var(--white);
+  padding: 1em;
+  text-align: center;
 }
+
+.footer_name {
+  color: var(--light-green);
+}
+
+/* footer end */
