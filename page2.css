@@ -1,0 +1,41 @@
+/* GLOBAL */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar {
+  background-color: #555;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar .header {
+  display: flex;
+}
+
+.navbar .header a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #aaa;
+  align-self: center;
+  text-decoration: none;
+}
+
+.navbar .nav {
+  display: flex;
+  justify-items: center;
+}
+
+.navbar .nav a {
+  color: #aaa;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.navbar .nav a:hover {
+  background-color: #aaa;
+  color: #555;
+}
