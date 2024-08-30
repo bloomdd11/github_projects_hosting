@@ -9,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>This is the first step of deploying react app</p>
         <p>This line is to notify that I have successfully deployed react page on github.</p>
+        <p>This one is to check my deploy yml file is working.</p>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
